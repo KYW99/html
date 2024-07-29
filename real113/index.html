@@ -115,7 +115,63 @@
             border-top: 1px solid #d7d7d7;
             box-sizing: border-box;
         }
- 
+        main > div > .banner > ul > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 40.8px;
+            background: #f2f2f2;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        main > div > .banner > ul > li > a:hover {background: #fefefe;}
+
+        main > div > .call {
+            position: relative;
+            float: right;
+            width: 406px;
+            height: 133px;
+            background: #f2f2f2;
+        }
+
+        main > div > .call > img {position: absolute;}
+        main > div > .call > img:nth-child(1) {left: 20px; top: 20px;}
+        main > div > .call > img:nth-child(2) {left: 20px; top: 46px; z-index: 10;}        
+        main > div > .call > img:nth-child(3) {left: 30px; bottom: 20px; z-index: 10;}
+        main > div > .call > img:nth-child(4) {right: 0; top: 0; z-index: 0;}
+
+        main > div > .qna {
+            float: right;
+            width: 406px;
+            height: 182px;
+            margin-top: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        main > div > .qna > h3 {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        main > div > .qna > table {
+            width: 100%;
+            height: auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-top: 6px;
+        }
+        main > div > .qna > table td {color: #6a6a6a;}
+        main > div > .qna > table td:nth-child(2) {
+            display: inline-block;    
+            width: 296px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 20px;
+        }
+        main > div > .qna > table a {color: inherit;}
+        main > div > .qna > table a:hover {text-decoration: underline;}
 
 
         main > section {            
@@ -247,7 +303,18 @@
             margin-bottom: 10px;
         }
 
+        footer > p {
+            font-size: 11.5px;
+            color: #585858;
+            line-height: 20px;
+            margin-left: 10px;
+        }
 
+        footer > p > span {
+            display: block;
+            margin-top: 6px;
+            font-weight: bold;
+        }
 
     </style>
 </head>
