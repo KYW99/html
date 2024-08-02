@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmstoryMain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: '돋움', sans-serif;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        #wrapper {
+            width: 100%;
+            min-height: 100vh; /* Ensure wrapper covers the full viewport height */
+            padding-bottom: 120px; /* Space for the footer */
+        }
+
+        header {
+            width: 100%;
+            max-width: 1200px; /* Ensure header doesn't stretch too much */
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .htop {
+            height: 10px;
+            background-image: url('./image/head_top_line.png');
+            background-repeat: repeat;
+        }
+
+        .top p {
+            margin-top: 10px;
+            text-align: right;
+            font-size: 0.75rem; /* Responsive font size */
+        }
+
+        .top a {
+            margin-left: 15px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo img, .sale img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            font-size: 0.75rem; /* Responsive font size */
+        }
+
+        footer {
+            width: 100%;
+            max-width: 1200px; /* Ensure footer doesn't stretch too much */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .fline {
+            height: 10px;
+            background: url('./image/footer_top_line.png') repeat;
+        }
+
+        .footer-logo {
+            width: 174px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        #Paragraph {
+            margin-top: 20px;
+            font-size: 0.75rem; /* Responsive font size */
+        }
+
+        .info1, .info2, .info3 {
+            margin: 5px 0;
+        }
+
+        .info1 {
+            font-size: 0.75rem; /* Responsive font size */
+            color: #585858;
+        }
+
+        .info2 {
+            font-size: 0.75rem; /* Responsive font size */
+            color: #888888;
+        }
+
+        .info3 {
+            font-size: 0.75rem; /* Responsive font size */
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="htop"></div>
+            <div class="top">
+                <p>
+                    <a href="#">HOME|</a>
+                    <a href="#">로그인|</a>
+                    <a href="#">회원가입|</a>
+                    <a href="#">관리자|</a>
+                    <a href="#">고객센터</a>
+                </p>
+            </div>
+            <article>
+                <a href="#" class="logo"><img src="./image/logo.png" alt="logo"></a>
+                <a href="#" class="sale"><img src="./image/head_txt_img.png" alt="htxt"></a>
+            </article>
+            <nav>
+                <ul>
+                    <li><a href="#">팜스토리소개</a></li>
+                    <li><a href="#">장보기<img src="./image/head_menu_badge.png" alt="badge"></a></li> 
+                    <li><a href="#">농작물이야기</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content goes here -->
+
+    </div>
+
+    <footer>
+        <div>
+            <div class="fline"></div>
+            <div id="Paragraph">
+                <p class="info1">
+                    (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-부산진구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호
+                    등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동
+                    대표 : 김철학 / 이메일 : chhak0503@gmail.com / 전화 : 01) 234-5678 / 부산광역시 부산진구 부전동 123
+                </p>
+                <p class="info2">
+                    copyrightⓒ 김철학(개발에반하다.) All rights reserved.
+                </p>
+                <p class="info3">
+                    farmstory ver1.0.1
+                </p>    
+            </div>
+        </div>
+        <img src="./image/footer_logo.png" class="footer-logo" alt="farmstoryfootlogo">
+    </footer>
+</body>
+</html>
