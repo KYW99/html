@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>directions.html</title>
+    <title>greetingcp.html</title>
 
     <style>
     
@@ -71,8 +71,6 @@
             width: 237.15px;
         }
 
-
-
         .headlog {
             position : absolute;
             left : 40%;
@@ -128,6 +126,9 @@
             right: 470px;
             top: 145px;
 
+            background: url(.jpg);
+
+
         }
         .subtopbg1 .subtoptit1{
             position: absolute;
@@ -158,22 +159,28 @@
 
         }
 
-        main {
-            width : 100%;
-            height : 850px;
-            border : 1px solid blakc;
+        main > section{
+
+            position: absolute;
+            height: 650px;
+            left: 470px;
+            right: 470px;
+            top: 326px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+
         }
 
-        #asidesize{
+        main > section > aside {
             position: absolute;
             width: 176px;
             height: 650px;
-            left: 470px;
-            top: 340px;
+            left: 0px;
+            top: 0px;
 
             background: url(.png);
+
         }
-        
         .asidegate1{
             position: absolute;
             width: 130px;
@@ -194,12 +201,9 @@
             width: 175px;
             height: 233px;
             left: 0px;
-            top: 81px;
-
+            top: 81px; 
             background: url('img/sub_aside_bg_lnb.png');
-
         }
-
         .asidelnb .lnb1{
             position: absolute;
             left: 0px;
@@ -216,21 +220,23 @@
             right: 0px;
             top: 61px;
             bottom: 143px;
-
+                    
             background: url(.png);
 
         }
 
 
+
         /***********/
         /* footer */
         footer {
-            box-sizing: border-box;
-            margin : 0 auto;
-            width : 980px;
-            height: auto;
-            background-color: #F8F9FA; /* 배경색 추가 */
-            overflow :hidden
+            box-sizing: border-box; 
+            position: absolute;
+            height: 130px;
+            left: 470px;
+            right: 470px;
+            top: 976px;
+                
         }
         footer > div {
             float :right;
@@ -238,12 +244,8 @@
             height : 120px;
             
         }
+
     
-        /*************************************************************************************************/
-        /*************************************************************************************************/
-        /********************************************** main  ********************************************/
-        /*************************************************************************************************/
-        /*************************************************************************************************/
         
 
     /*footer topline*/
@@ -347,31 +349,28 @@
                 </ul>
             </nav>
         </div>
+        <div class="subtopbg1">
+            <img src="./img/sub_top_bg.jpg" alt="subtopbg1">
+            <div class="subtoptit1"><img src="./img/sub_top_tit1.png" alt="subtoptit1"></div>
+        </div>
     </header>
-    <div class="subtopbg1">
-        <img src="./img/sub_top_bg.jpg" alt="subtopbg1">
-        <div class="subtoptit1"><img src="./img/sub_top_tit1.png" alt="subtoptit1"></div>
-    </div>
-    <div class="directionsimage">
-        <div class="directionsimagemain"><img src="./img/image.png" alt="directionsimage"></div>
-    </div>
   <main>
-
+  <section class="middle">
+    <aside>
+        <div id="asidesize">
+            <div class="asidegate1"><img src="./img/sub_aside_cate1_tit.png" alt=""></div>
+            <div class="asidebgline"><img src="./img/sub_aside_bg_line.png" alt=""></div>
+        <ul class="asidelnb">
+            <li>
+                <li class="lnb1"><a href="#"><img id="lnb1" src="./img/sub_cate1_lnb1_ov.png" alt="cate_lnb1"></a></li>
+                <li class="lnb2"><a href="#"><img id="lnb2" src="./img/sub_cate1_lnb2.png" alt="cate_lnb2"></a></li>
+                
+            </li>
+        </ul>
+        </div>
+    </aside>
+  </section>
   </main>
-
-  <aside>
-    <div id="asidesize">
-        <div class="asidegate1"><img src="./img/sub_aside_cate1_tit.png" alt=""></div>
-        <div class="asidebgline"><img src="./img/sub_aside_bg_line.png" alt=""></div>
-    <ul class="asidelnb">
-        <li>
-            <li class="lnb1"><a href="#"><img id="lnb1" src="./img/sub_cate1_lnb1.png" alt="cate_lnb1"></a></li>
-            <li class="lnb2"><a href="#"><img id="lnb2" src="./img/sub_cate1_lnb2_ov.png" alt="cate_lnb2"></a></li>
-            
-        </li>
-    </ul>
-    </div>
-  </aside>
     <footer>
         <div>
             <div class="fline"></div>
