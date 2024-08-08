@@ -139,32 +139,27 @@
             background: url(.png);
 
         }
-        .directionsimage{
-            position: absolute;
-            height: 260px;
-            left: 470px;
-            right: 936px;
-            top: 716px;
-
-        }
-        .directionsimage .directionsimagemain{
-            position: absolute;
-            width: 780px;
-            height: 615px;
-            left: 184px;
-            top: -376px;
-                    
-            background: url(image.png);
-
-        }
+    
 
         main {
-            width : 100%;
-            height : 850px;
-            border : 1px solid blakc;
+            position: absolute;
+            height: 650px;
+            left: 470px;
+            right: 470px;
+            top: 326px;
+        }
+        main > aside{
+            position: absolute;
+            width: 176px;
+            height: 650px;
+            left: 0px;
+            top: 0px;
+
+            background: url(.png);
+
         }
 
-        #asidesize{
+        main > #asidesize{
             position: absolute;
             width: 176px;
             height: 650px;
@@ -172,6 +167,7 @@
             top: 340px;
 
             background: url(.png);
+            
         }
         
         .asidegate1{
@@ -185,8 +181,11 @@
 
         }
 
-        .asidebgline{
+        main #asidesize .asidebgline{
+            position: relative;
+            top: 37px;
             float: right;
+            
         }
 
         .asidelnb{
@@ -221,17 +220,103 @@
 
         }
 
+        .hello{
+            position: absolute;
+            width: 802px;
+            height: 650px;
+            left: 176px;
+            top: 0px;
+        }
+
+        .hello > article > nav{
+            box-sizing: border-box;
+            position: absolute;
+            width: 762px;
+            height: 72px;
+            left: 40px;
+            right: 0px;
+            top: 0px;
+
+            border-bottom: 1px solid #C2C2C2;
+
+        }
+        .hello > article > nav .navtit2{
+            position: absolute;
+            width: 131px;
+            height: 50px;
+            left: 0px;
+            bottom: 5px;
+
+            background: url(.png);
+
+        }
+
+        .hello > article > nav .smallhello{
+            position: absolute;
+            width: 180px;
+            height: 19px;
+            left: 75.21%;
+            right: 0%;
+            bottom: 5px;
+            white-space: nowrap;
+     
+       
+        }
+       
+
+        .hello > article > nav .smallhello .smallhello2{
+            position: absolute;
+            width: 169.07px;
+            height: 14px;
+            right: 25px;
+            top: 1px;
+
+            font-family: Arial, Helvetica, sans-serif; /* 폰트 패밀리 */
+            font-style: normal; /* 폰트 스타일 */
+            font-weight: 400; /* 폰트 굵기 */
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+
+            color: #8C8C8C;
+
+
+        }
+        .hello > article > nav .smallhello .smallhello2 > div{
+            position: relative;
+            right: 3px;
+            bottom: 2px;
+
+        }
+        .hello > article > nav .smallhello .smallhello2 .highlight{
+            position: relative;
+            bottom: 1.5px;
+            font-weight: bold;
+            color: #91BA15;
+            
+        }
+
+
 
         /***********/
+     /***********/
         /* footer */
         footer {
             box-sizing: border-box;
+            position: absolute;
             margin : 0 auto;
             width : 980px;
-            height: auto;
+            height: 130px;
+            top: 1010px;
+            left: 470px;
+            right: 470px;
             background-color: #F8F9FA; /* 배경색 추가 */
+            
             overflow :hidden
-        }
+        }/* Footer */
+
+
         footer > div {
             float :right;
             width :100%;
@@ -352,26 +437,39 @@
         <img src="./img/sub_top_bg.jpg" alt="subtopbg1">
         <div class="subtoptit1"><img src="./img/sub_top_tit1.png" alt="subtoptit1"></div>
     </div>
-    <div class="directionsimage">
-        <div class="directionsimagemain"><img src="./img/image.png" alt="directionsimage"></div>
-    </div>
-  <main>
-
-  </main>
-
-  <aside>
-    <div id="asidesize">
-        <div class="asidegate1"><img src="./img/sub_aside_cate1_tit.png" alt=""></div>
-        <div class="asidebgline"><img src="./img/sub_aside_bg_line.png" alt=""></div>
-    <ul class="asidelnb">
-        <li>
-            <li class="lnb1"><a href="#"><img id="lnb1" src="./img/sub_cate1_lnb1.png" alt="cate_lnb1"></a></li>
-            <li class="lnb2"><a href="#"><img id="lnb2" src="./img/sub_cate1_lnb2_ov.png" alt="cate_lnb2"></a></li>
+    <main>
+        <div class="hello">
+            <article>
+                <nav>
+                    <img src="./img/sub_nav_tit_cate1_tit2.png" class="navtit2" alt="">
+                    <div class="smallhello">  
+                                     
+                        <div class="smallhello2">
+                            <div><img src="/img/sub_page_nav_ico.gif" alt=""></div> 
+                          HOME > 팜스토리소개 ><span class="highlight">찾아오시는길</span>
+                       </div>
+                </nav>
+             
             
-        </li>
-    </ul>
-    </div>
-  </aside>
+                
+            </div>
+            <aside>
+                <div id="asidesize">
+                    <div class="asidegate1"><img src="./img/sub_aside_cate1_tit.png" alt=""></div>
+                    <div class="asidebgline"><img src="./img/sub_aside_bg_line.png" alt=""></div>
+                <ul class="asidelnb">
+                    <li>
+                        <li class="lnb1"><a href="#"><img id="lnb1" src="./img/sub_cate1_lnb1.png" alt="cate_lnb1"></a></li>
+                        <li class="lnb2"><a href="#"><img id="lnb2" src="./img/sub_cate1_lnb2_ov.png" alt="cate_lnb2"></a></li>
+                        
+                    </li>
+                </ul>
+                </div>
+              </aside>
+            </article>
+        </div>
+
+    </main>
     <footer>
         <div>
             <div class="fline"></div>
